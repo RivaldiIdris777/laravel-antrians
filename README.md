@@ -80,7 +80,13 @@ Tahap selanjutnya jalankan php artisan dan npm
 
 -> Step 1 : Masukkan data layanan terlebih dahulu
 -> Step 2 : Masukkan Data Loket 
--> Step 3 : Masukkan Data 
+-> Step 3 : Masukkan Data Antrian (Opsional)
+-> Step 4 : Akses halaman Pengaturan tampilan
+-> Step 5 : Pilih halaman print tiket
+-> Step 6 : Akses halaman Loket pada sub menu operator
+-> Step 7 : Pilih loket 
+-> Step 8 : Panggil Antrian berdasarkan loket
+-> Step 9 : Tampilkan 2 halaman Antrian berdasarkan loket dengan halaman layar (Pada sub menu operator -> Halaman Layar)
 
 Catatan : 
 
