@@ -1,0 +1,174 @@
+﻿* {
+    box-sizing: border-box;
+}
+
+#sidebar {
+    width: 260px;
+    transition: width 260ms cubic-bezier(.4, 0, .2, 1);
+}
+
+#sidebar.collapsed {
+    width: 72px;
+}
+
+.sl {
+    transition: opacity 180ms ease, max-width 180ms ease;
+    overflow: hidden;
+    white-space: nowrap;
+    max-width: 180px;
+    display: inline-block;
+}
+
+#sidebar.collapsed .sl {
+    opacity: 0;
+    max-width: 0;
+    pointer-events: none;
+}
+
+/* Sembunyikan label menu saat collapsed */
+#sidebar.collapsed nav>p {
+    display: none;
+}
+
+/* Styling menu item saat collapsed */
+#sidebar.collapsed .menu-item {
+    justify-content: center;
+    padding: 0.75rem 0.5rem;
+    min-height: 44px;
+}
+
+#sidebar.collapsed .submenu-item {
+    justify-content: center;
+    padding: 0.75rem 0;
+    min-height: 44px;
+}
+
+/* Sembunyikan chevron saat collapsed */
+#sidebar.collapsed .chev-sub {
+    display: none;
+}
+
+/* Sembunyikan submenu saat collapsed */
+#sidebar.collapsed .submenu {
+    display: none;
+}
+
+/* Tooltip saat collapsed */
+#sidebar.collapsed [data-tip] {
+    position: relative;
+}
+
+#sidebar.collapsed [data-tip]:hover::after {
+    content: attr(data-tip);
+    position: absolute;
+    left: 52px;
+    top: 50%;
+    transform: translateY(-50%);
+    background: #0f172a;
+    color: #f1f5f9;
+    font-size: 12px;
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    padding: 6px 12px;
+    border-radius: 8px;
+    white-space: nowrap;
+    z-index: 9999;
+    pointer-events: none;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, .18);
+    font-weight: 500;
+}
+
+/* Dropdown profil */
+#profile-dropdown {
+    transition: opacity 160ms ease, transform 160ms ease;
+    transform-origin: top right;
+}
+
+#profile-dropdown.dp-hide {
+    opacity: 0;
+    transform: scale(.95) translateY(-6px);
+    pointer-events: none;
+}
+
+#profile-dropdown.dp-show {
+    opacity: 1;
+    transform: scale(1) translateY(0);
+    pointer-events: auto;
+}
+
+/* Submenu transisi */
+.submenu {
+    overflow: hidden;
+    transition: max-height 280ms cubic-bezier(.4, 0, .2, 1);
+    max-height: 0;
+}
+
+.submenu.show {
+    max-height: 500px;
+}
+
+/* Scrollbar tipis */
+#main-content::-webkit-scrollbar {
+    width: 4px;
+}
+
+#main-content::-webkit-scrollbar-thumb {
+    background: #cbd5e1;
+    border-radius: 4px;
+}
+
+#sidebar nav::-webkit-scrollbar {
+    width: 3px;
+}
+
+#sidebar nav::-webkit-scrollbar-thumb {
+    background: rgba(255, 255, 255, .2);
+    border-radius: 4px;
+}
+
+/* Chevron submenu rotasi */
+.chev-sub {
+    transition: transform 260ms ease;
+}
+
+.chev-sub.rotated {
+    transform: rotate(180deg);
+}
+
+/* Active menu item */
+.menu-item.active {
+    background: rgba(255, 255, 255, .18);
+    color: #fff;
+    font-weight: 600;
+}
+
+/* Animasi masuk sidebar */
+@keyframes fadeSlideIn {
+    from {
+        opacity: 0;
+        transform: translateX(-8px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+.menu-item {
+    animation: fadeSlideIn 300ms ease both;
+}
+
+/* Hover effect untuk menu item */
+.menu-item:hover:not(.active) {
+    background: rgba(255, 255, 255, 0.1);
+}
+
+/* Tombol toggle di sidebar */
+#toggle-sidebar-btn {
+    transition: all 0.2s ease;
+}
+
+#toggle-sidebar-btn:hover {
+    background: rgba(255, 255, 255, 0.1);
+    transform: scale(1.05);
+}
