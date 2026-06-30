@@ -55,7 +55,7 @@
                   text-blue-100 hover:text-white cursor-pointer transition-colors text-[13px]" data-tip="Beranda"
             style="animation-delay:0ms">
             <i class="ti ti-ticket text-[18px] shrink-0"></i>
-            <a href="{{ route('lokets.index') }}" class="sl">Konter</a>
+            <a href="{{ route('lokets.index') }}" class="sl">Loket</a>
         </div>
 
         <!-- Counter -->
@@ -98,7 +98,7 @@
                   text-blue-100 hover:text-white cursor-pointer transition-colors text-[13px]" data-tip="Beranda"
             style="animation-delay:0ms">
             <i class="ti ti-ticket text-[18px] shrink-0"></i>
-            <a href="{{ route('client.qounter.index') }}" class="sl">Konter</a>
+            <a href="{{ route('client.qounter.index') }}" class="sl">Loket</a>
         </div>
         @else      
         <!-- Divider Menu Lainnya -->
@@ -133,7 +133,7 @@
                   text-blue-100 hover:text-white cursor-pointer transition-colors text-[13px]" data-tip="Beranda"
             style="animation-delay:0ms">
             <i class="ti ti-ticket text-[18px] shrink-0"></i>
-            <a href="{{ route('client.qounter.index') }}" class="sl">Konter</a>
+            <a href="{{ route('client.qounter.index') }}" class="sl">Loket</a>
         </div>
         @endif        
             

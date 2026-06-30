@@ -48,12 +48,12 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     });
 });
 
-// Add scroll effect to header
+// Add subtle scroll effect to header (background tetap solid)
 window.addEventListener('scroll', () => {
     const header = document.querySelector('header');
     if (window.scrollY > 50) {
-        header.classList.add('shadow-lg');
+        header.classList.add('shadow-xl');
     } else {
-        header.classList.remove('shadow-lg');
+        header.classList.remove('shadow-xl');
     }
 });

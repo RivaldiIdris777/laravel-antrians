@@ -41,6 +41,7 @@
         0% {
             transform: translateX(100%);
         }
+
         100% {
             transform: translateX(-100%);
         }
@@ -58,22 +59,17 @@
             <!-- Video / Banner -->
             <div class="counter-card overflow-hidden p-0">
                 <div class="video-container rounded-lg h-full flex items-center justify-center relative">
-                    <iframe
-                        width="100%"
-                        height="100%"
-                        src="https://www.youtube.com/embed/fQIuP2WgJO8?autoplay=1&loop=1&playlist=fQIuP2WgJO8&controls=0&mute=1&rel=0"
-                        title="Video Antrian"
-                        frameborder="0"
+                    <iframe width="100%" height="100%" src="https://www.youtube.com/embed/RnUgqO6NCcU" title="Video Antrian" frameborder="0"
                         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                        allowfullscreen
-                        class="absolute inset-0 w-full h-full rounded-lg"
-                        style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; object-fit: cover;">
+                        allowfullscreen class="absolute inset-0 w-full h-full rounded-lg"
+                        style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;">
                     </iframe>
+
                 </div>
             </div>
 
             <!-- Info Tambahan -->
-            <div class="grid grid-cols-1 gap-4">                
+            <div class="grid grid-cols-1 gap-4">
                 <div class="counter-card bg-primary text-center overflow-hidden">
                     <div class="marquee-text">
                         <span>Antrians — Aplikasi antrian berbasis web menggunakan Laravel</span>
@@ -132,6 +128,7 @@
     }
 
     initEchoListener();
+
 </script>
 @endpush
 @endsection

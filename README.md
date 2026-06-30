@@ -58,8 +58,6 @@ Berikut adalah beberapa tangkapan layar dari aplikasi yang berjalan:
 
 -> Kemudian lakukan installasi selanjutnya dibawah didalam folder project nya
 
-Install my-project with npm
-
 ```bash
   composer update / composer install
   npm install   
@@ -77,6 +75,12 @@ Tahap selanjutnya jalankan php artisan dan npm
   npm run dev
   php artisan serve
 ```
+
+## Cara kerja pemakaian
+
+-> Step 1 : Masukkan data layanan terlebih dahulu
+-> Step 2 : Masukkan Data Loket 
+-> Step 3 : Masukkan Data 
 
 Catatan : 
 

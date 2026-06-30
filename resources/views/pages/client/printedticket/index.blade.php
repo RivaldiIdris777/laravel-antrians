@@ -56,8 +56,8 @@
 @endpush
 @section('hero')
 <!-- Main Content -->
-<main class="bg-light p-6">
-    <div class="grid grid-cols-1 md:grid-cols-4 gap-2 h-full">
+<main class="bg-light p-6 h-full flex-1 flex">
+    <div class="grid grid-cols-1 md:grid-cols-4 gap-2 h-full w-full">
         @forelse($lokets as $loket)
         <a href="{{ route('printed.ticket.cetak', $loket->id) }}" class="counter-card bg-primary text-center cursor-pointer" target="_blank">
             <p class="text-xl text-light">Loket Antrian</p>

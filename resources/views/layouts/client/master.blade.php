@@ -23,9 +23,9 @@
     @include('layouts.client.header')
     
     <!-- Main Content -->
-    <main class="pt-16">
+    <main class="pt-16 min-h-screen flex flex-col">
         <!-- Hero Section -->
-        <section id="beranda" class="relative overflow-hidden">
+        <section id="beranda" class="relative overflow-hidden flex-1 flex flex-col">
             @yield('hero')
         </section>                
     </main>
